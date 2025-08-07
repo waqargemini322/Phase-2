@@ -1,0 +1,325 @@
+/* Link2Investors Custom Features Styles */
+
+/* Connection Button Styles */
+.pt-connect-btn {
+    display: inline-block;
+    padding: 8px 16px;
+    background: #007cba;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    margin: 5px;
+}
+
+.pt-connect-btn:hover {
+    background: #005a87;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.pt-connect-btn:disabled {
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+.pt-connect-btn.pending {
+    background: #ffa500;
+    color: white;
+}
+
+.pt-connect-btn.connected {
+    background: #28a745;
+    color: white;
+}
+
+/* Zoom Controls Styles */
+#zoom-controls-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: auto;
+}
+
+#zoom-invites-label {
+    font-size: 12px;
+    color: #666;
+    white-space: nowrap;
+}
+
+.zoom-button-circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #007cba;
+    color: white;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.zoom-button-circle:hover {
+    background: #005a87;
+    transform: scale(1.1);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+.zoom-button-circle:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+    transform: none;
+}
+
+/* Zoom Meeting Link Styles */
+.zoom-meeting-link {
+    background: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    padding: 12px;
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.zoom-meeting-link i {
+    color: #007cba;
+    font-size: 16px;
+}
+
+.zoom-link {
+    color: #007cba;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 6px 12px;
+    background: white;
+    border: 1px solid #007cba;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.zoom-link:hover {
+    background: #007cba;
+    color: white;
+    text-decoration: none;
+}
+
+/* Notification Styles */
+.pt-notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 12px 20px;
+    border-radius: 4px;
+    color: white;
+    font-weight: 500;
+    z-index: 9999;
+    max-width: 300px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    display: none;
+}
+
+.pt-notification.success {
+    background: #28a745;
+}
+
+.pt-notification.error {
+    background: #dc3545;
+}
+
+.pt-notification.info {
+    background: #17a2b8;
+}
+
+.pt-notification.warning {
+    background: #ffc107;
+    color: #212529;
+}
+
+/* Credit Display Styles */
+.credit-display {
+    display: flex;
+    gap: 15px;
+    margin: 10px 0;
+    padding: 10px;
+    background: #f8f9fa;
+    border-radius: 4px;
+    border: 1px solid #dee2e6;
+}
+
+.credit-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.credit-label {
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 4px;
+}
+
+.credit-count {
+    font-size: 18px;
+    font-weight: bold;
+    color: #007cba;
+}
+
+/* Contact Profile Styles */
+.contact-profile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    background: #f8f9fa;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.profile-info-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.profile-info-group img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-info-group p {
+    margin: 0;
+    font-weight: 500;
+    color: #333;
+}
+
+/* File Attachment Styles */
+.chat-file-preview {
+    margin: 5px 0;
+    padding: 8px;
+    background: #f8f9fa;
+    border-radius: 4px;
+    border: 1px solid #dee2e6;
+}
+
+.chat-file-preview a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #007cba;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.chat-file-preview a:hover {
+    color: #005a87;
+    text-decoration: none;
+}
+
+.chat-file-preview img {
+    max-width: 50px;
+    max-height: 50px;
+    border-radius: 4px;
+}
+
+.chat-file-preview i {
+    font-size: 20px;
+    color: #666;
+}
+
+.chat-file-preview span {
+    flex: 1;
+    word-break: break-word;
+}
+
+/* Message Attachments Container */
+.message-attachments {
+    margin-top: 8px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-profile {
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+    }
+    
+    #zoom-controls-group {
+        margin-left: 0;
+        width: 100%;
+        justify-content: space-between;
+    }
+    
+    .credit-display {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .pt-notification {
+        right: 10px;
+        left: 10px;
+        max-width: none;
+    }
+}
+
+/* Loading States */
+.pt-connect-btn.loading,
+.zoom-button-circle.loading {
+    position: relative;
+    color: transparent;
+}
+
+.pt-connect-btn.loading::after,
+.zoom-button-circle.loading::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 16px;
+    height: 16px;
+    margin: -8px 0 0 -8px;
+    border: 2px solid transparent;
+    border-top: 2px solid currentColor;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Accessibility */
+.pt-connect-btn:focus,
+.zoom-button-circle:focus {
+    outline: 2px solid #007cba;
+    outline-offset: 2px;
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+    .pt-connect-btn {
+        border: 2px solid currentColor;
+    }
+    
+    .zoom-button-circle {
+        border: 2px solid currentColor;
+    }
+    
+    .pt-notification {
+        border: 2px solid currentColor;
+    }
+}
